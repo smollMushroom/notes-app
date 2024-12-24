@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note List</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Note List</h1>
+    </header>
+    
+    <main>
+      <div class="container">
+        <section class="note-list">
+          <h2>List Note</h2>
+          <div class="notes">
+          </div>
+        </section>
+        <section class="note-form">
+          <h2>Menambah Note</h2>
+          <form id="add-note-form">
+            <div>
+              <label for="note-title">Title</label>
+              <input type="text" id="note-title" required autocomplete="off"/>
+            </div>
+            <div>
+              <label for="note-content">Note Content</label>
+              <textarea id="note-content" required autocomplete="off"></textarea>              
+            </div>
+            <button type="submit" >Save</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="./js/script.js"></script>
+</html>

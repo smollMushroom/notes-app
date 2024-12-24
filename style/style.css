@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #f9f7f7;
+}
+
+header {
+  background-color: #3f72af;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  text-align: center;
+  color: #dbe2ef;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block: 70px;
+}
+
+main h2 {
+  color: #112d4e;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  color: #112d4e;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.note-list,
+.note-form {
+  background-color: #dbe2ef;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(17, 45, 78, 0.4) 0px 2px 5px 0px;
+}
+
+.note-list {
+  width: 60%;
+  min-height: 500px;
+  height: fit-content;
+}
+
+.note-form {
+  width: 40%;
+  min-height: 300px;
+  height: fit-content;
+}
+
+.notes {
+  color: #f9f7f7;
+  margin-block: 20px;
+  padding-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note {
+  background-color: #3f72af;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 5px;
+  position: relative;
+}
+
+.delete-note {
+  background-color: #dbe2ef;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.delete-note img {
+  width: 20px;
+  height: 20px;
+}
+
+form {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#note-title {
+  border-radius: 5px;
+  height: 30px;
+  padding-inline: 5px;
+  border: 1px solid #112d4e;
+  font-family: "Roboto";
+}
+
+#note-title:focus{
+  outline: 1px solid #112d4e;
+}
+
+#note-content {
+  font-family: "Roboto";
+  padding: 5px;
+  border-radius: 5px;
+  min-height: 150px;
+  height: 100%;
+  resize: vertical;
+  border: 1px solid #112d4e;
+}
+
+#note-content:focus{
+  outline: 1px solid #112d4e;
+}
+
+
+form button {
+  margin-top: 10px;
+  align-self: center;
+  background-color: #3f72af;
+  color: #f9f7f7;
+  padding: 7px 32px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button:hover{
+  background-color: #112d4e;
+  cursor: pointer;
+}
